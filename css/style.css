@@ -259,6 +259,10 @@ body{
   margin: 0 0 11px 0;
 }
 
+.list__submit{
+  display: none;
+}
+
 .attribution{
   position: absolute;
   bottom: 0;
