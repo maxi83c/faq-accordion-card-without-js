@@ -196,6 +196,10 @@ body{
   font-weight: 700;
 }
 
+.list__radio:checked + .list__title:hover{
+  color: var(--dark-gray);
+}
+
 .list__title::after{
   content:"";
   width: 10px;
