@@ -14,6 +14,7 @@
   --time: 0.5s;
   }
 
+
 *{
   box-sizing: border-box;
 }
@@ -24,16 +25,17 @@ body{
   font-weight: 400;
   background-image: 
   linear-gradient(var(--violet), var(--blue));
-  height: 612px;
+  height: max(612px, calc(100vh - 156px));
   min-width: 375px;
   position: relative;
 }
 
 @media screen and (min-width: 1000px){
   body{
-    height: max(632px, 100vh);
+    height: max(632px, calc(100vh - 136px));
   }
 }
+
 
 .main{
   background-color: white;
