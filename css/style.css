@@ -12,7 +12,7 @@
   --divider: #e7e7e9;
   /* transition time*/ 
   --time: 0.5s;
-  }
+}
 
 
 *{
@@ -70,7 +70,7 @@ body{
   position: absolute;
   top:-108px;
   left: 15px;
-  background-image: url(../images/illustration-woman-online-mobile.svg), url(../images/bg-pattern-mobile.svg) ;
+  background-image: url(../images/illustration-woman-online-mobile.svg), url(../images/bg-pattern-mobile.svg);
   background-position: top, 30px 107px;
   background-repeat: no-repeat;
 }
@@ -87,7 +87,7 @@ body{
       min-height: 509px;
       top: 0;
       left: 0;
-      background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg) ;
+      background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
       background-position: -83px 71px, -576px -296px;
     }
 
@@ -189,7 +189,7 @@ body{
     top: -1px;
   }
 
-  .list__title:hover{
+  .list__radio:not(:checked) + .list__title:hover{
     color: var(--orange);
   }
 }
@@ -198,9 +198,6 @@ body{
   font-weight: 700;
 }
 
-.list__radio:checked + .list__title:hover{
-  color: var(--dark-gray);
-}
 
 .list__title::after{
   content:"";
@@ -265,6 +262,7 @@ body{
   margin: 0 0 11px 0;
 }
 
+/* Required from Frontend Mentor accessibility checks */
 .list__submit{
   display: none;
 }
